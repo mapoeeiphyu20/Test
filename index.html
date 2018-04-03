@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Radial Menu Animation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+<div class="content">
+  <div class="header">
+    <div class="header__topBar"> </div>
+    <div class="header__botBar"> </div>
+  </div>
+  <div class="content__items--wrap">
+    <div class="content__items">
+      <div class="item"> </div>
+      <div class="item"> </div>
+      <div class="item"> </div>
+      <div class="item"> </div>
+      <div class="item"> </div>
+      <div class="item"> </div>
+    </div>
+    <div class="content__menu">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+        <circle class="crc-bg" cx="320" cy="320" r="100" fill="#fff"></circle>
+        <circle class="crc-arc" cx="320" cy="320" r="150" fill="none" visibility="hidden"
+                stroke-width="200" stroke="#E81B59"
+                stroke-dasharray="10, 350" stroke-dashoffset="-230"
+        ></circle>
+
+        <a class="svg__link" target="_blank" xlink:href="https://codepen.io/mudrenok/">
+          <use class="link-cdpn" xlink:href="#codepen" width="50" height="50" x="300" y="300" fill="#21264b"></use>
+        </a>
+        <a class="svg__link" target="_blank" xlink:href="https://dribbble.com/shots/3377940-Home-Budget-App-Interactions">
+          <use class="link-drbl" xlink:href="#dribbble" width="50" height="50" x="300" y="300" fill="#fff"></use>
+        </a>
+        <a class="svg__link" target="_blank" xlink:href="https://twitter.com/AntonMudrenok">
+          <use class="link-twtr" xlink:href="#twitter" width="50" height="50" x="300" y="300" fill="#21264b"></use>
+        </a>
+
+        <radialGradient id="grd">
+          <stop offset="0" style="stop-color:rgba(0,0,0, 0)"> </stop>
+          <stop offset="0.85" style="stop-color:rgba(0,0,0, 0.85)"> </stop>
+          <stop offset="1" style="stop-color:rgba(0,0,0, 0)"> </stop>
+        </radialGradient>
+        <circle class="crc-sd" cx="320" cy="320" r="105" fill=url(#grd)></circle>
+        <circle class="crc-sm" cx="320" cy="320" r="100" fill="#fff"></circle>
+
+        <g class="burger">
+          <line class="brgr-top"
+                stroke-width="5.5" stroke="#21264b" stroke-linecap="round"
+                x1="270" y1="270"
+                x2="296" y2="270"
+          ></line>
+          <line class="brgr-mid"
+                stroke-width="5.5" stroke="#21264b" stroke-linecap="round"
+                x1="270" y1="282"
+                x2="296" y2="282"
+          ></line>
+          <line class="brgr-bot"
+                stroke-width="5.5" stroke="#21264b" stroke-linecap="round"
+                x1="270" y1="294"
+                x2="296" y2="294"
+          ></line>
+        </g>
+      </svg>
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
